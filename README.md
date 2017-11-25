@@ -4,13 +4,15 @@ Sparrow, the best arrow.
 ## Getting started
 
 1. Clone this repository
-2. Install XCode / Command Line Tools
-3. Development:
+1. Development:
+    1. Install XCode / Command Line Tools
+    1. `brew install node`
+    1. `brew intsall watchment`
+    1. `npm install -g react-native-cli`
     1. `npm install -g yarn@latest`
-    2. `yarn`
-    3. `yarn start:ios` to dev on iOS
-    4. `yarn start:android` to dev on Android
-    5. `yarn lint` to lint
-    6. `yarn lint-fix` to fix lint
-5. Testing:
+    1. `yarn`
+    1. `yarn start:ios` to dev on iOS
+    1. `yarn lint` to lint
+    1. `yarn lint-fix` to fix lint
+1. Testing:
     1. `yarn test`
