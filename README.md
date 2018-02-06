@@ -7,7 +7,7 @@ Sparrow, the best arrow.
 1. Development:
     1. Install XCode / Command Line Tools
     1. `brew install node`
-    1. `brew intsall watchment`
+    1. `brew intsall watchman`
     1. `npm install -g react-native-cli`
     1. `npm install -g yarn@latest`
     1. `yarn`
