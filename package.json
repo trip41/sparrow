@@ -15,13 +15,17 @@
         "lint-fix": "tslint --fix -c tslint.json `find src -name '*.ts' -o -name '*.tsx' | egrep -v 'typings'`"
     },
     "dependencies": {
+        "geolib": "^2.0.24",
         "react": "16.0.0",
-        "react-native": "0.50.3"
+        "react-native": "0.50.3",
+        "react-native-google-places-autocomplete": "^1.3.6",
+        "react-navigation": "^1.5.4"
     },
     "devDependencies": {
         "@types/jest": "^21.1.8",
         "@types/react": "^16.0.25",
         "@types/react-native": "^0.50.7",
+        "@types/react-navigation": "^1.2.1",
         "babel-jest": "21.2.0",
         "babel-preset-react-native": "4.0.0",
         "concurrently": "^3.5.1",

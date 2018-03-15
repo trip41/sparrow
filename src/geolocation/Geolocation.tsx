@@ -37,12 +37,14 @@ export class Geolocation extends React.Component<IGeolocationProps, IGeolocation
                 this.setState({initialPosition});
             },
             (error) => alert(JSON.stringify(error)),
-            {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+            {enableHighAccuracy: true, timeout: 20000, maximumAge: 500},
         );
         this.watchID = navigator.geolocation.watchPosition((position) => {
             const lastPosition = JSON.stringify(position);
             this.setState({lastPosition});
-        });
+        },
+        (error) => alert(JSON.stringify(error)),
+        { enableHighAccuracy: true, timeout: 20000, maximumAge: 500 });
     }
 
     componentWillUnmount() {

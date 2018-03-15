@@ -1,46 +1,11 @@
-import * as React from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import {Geolocation} from "./geolocation/Geolocation";
+import { StackNavigator } from "react-navigation";
+import { SearchInput } from "./search/SearchInput";
 
-const instructions = Platform.select({
-    ios: "Press Cmd+R to reload,\n" +
-        "Cmd+D or shake for dev menu",
-    android: "Double tap R on your keyboard to reload,\n" +
-        "Shake or press menu button for dev menu",
-});
+// Cmd+R to reload
+// Cmd+D or shake for dev menu
 
-export interface IAppProps {}
-export interface IAppState {}
-
-export default class App extends React.Component<IAppProps, IAppState> {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>Hi B you are my favorite!!!</Text>
-                <Text style={styles.welcome}>Welcome to React Native!</Text>
-                <Text style={styles.instructions}>To get started, edit App.js</Text>
-                <Text style={styles.instructions}>{instructions}</Text>
-                <Geolocation/>
-            </View>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#F5FCFF",
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: "center",
-        margin: 10,
-    },
-    instructions: {
-        textAlign: "center",
-        color: "#333333",
-        marginBottom: 5,
+export default StackNavigator({
+    Home: {
+        screen: SearchInput,
     },
 });
