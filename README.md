@@ -11,6 +11,7 @@ Sparrow, the best arrow.
     1. `npm install -g react-native-cli`
     1. `npm install -g yarn@latest`
     1. `yarn`
+    1, `pod install` while in the `ios` folder
     1. `yarn start:ios` to dev on iOS
     1. `yarn lint` to lint
     1. `yarn lint-fix` to fix lint
